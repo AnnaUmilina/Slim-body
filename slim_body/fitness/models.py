@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class Fitness(models.Model):
@@ -18,3 +19,6 @@ class Training(models.Model):
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        ordering = ['-date']

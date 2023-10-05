@@ -28,23 +28,13 @@
 </div>
 <div class="wrapper">
     <ul class="menu menu_account">
-        <li><a href="{% url 'index' %}">Главная</a></li>
-        <li><a href="{% url 'training' %}">Фитнес</a></li>
-        <li><a href="{% url 'diets' %}">Про диеты</a></li>
-        <li><a href="{% url 'recipes' %}">Рецепты</a></li>
+        <li class="pink"><a href="{% url 'index' %}">Главная</a></li>
+        <li class="pink"><a href="{% url 'training' %}">Фитнес</a></li>
+        <li class="pink"><a href="{% url 'diets' %}">Про диеты</a></li>
+        <li class="pink"><a href="{% url 'recipes' %}">Рецепты</a></li>
     </ul>
 </div>
 {% endblock %}
-
-<!--{% if messages %}-->
-<!--<ul class="messages">-->
-<!--    {% for message in messages %}-->
-<!--    <li class="{{ message.tags }}">-->
-<!--        {{ message|safe }}-->
-<!--    </li>-->
-<!--    {% endfor %}-->
-<!--</ul>-->
-<!--{% endif %}-->
 
 {% block content %}
 

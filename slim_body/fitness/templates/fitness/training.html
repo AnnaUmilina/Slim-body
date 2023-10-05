@@ -12,11 +12,11 @@
     без вреда для здоровья. А если и побить рекорд, то только собственный.
     В фитнесе более сотен программ и направлений.<br><br><br>
     Программы, имеющие схожие задачи и характеристики, объединяют в направления:
+
     {% for fit in fitness %}
-    <div class="training"><a href="{{ fit.get_absolut_url }}">
+    <div class="training"><a href="{% url 'type-of-training' fit.id %}">
         <div><img src="{{ fit.image.url }}" alt="" class="fit_img"></div>
         <div class="training_title">{{ fit.type_of_training }}</div>
-<!--        <div>{{ fit.short_description }}</div></a>-->
     </a></div>
     {% endfor %}
 </div>

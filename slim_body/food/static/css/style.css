@@ -483,7 +483,7 @@ a{
 .my_article{
     background-color: #9fc8c8;
     margin-right: 15%;
-    width: 33%;
+    width: 36%;
 }
 .lk{
     border-left: 2px solid white;
@@ -501,6 +501,10 @@ a{
     padding: 10px;
     margin: 20px;
     position: relative;
+}
+.article_title div{
+    font-size: 17px;
+    font-weight: 300;
 }
 .but_up{
     margin-left: 5px;
@@ -522,7 +526,7 @@ a{
     color: #3e5858;
     background-color: #ffffff;
     box-shadow: 10px 20px 20px #3e5858;
-    background-color: #5d7e7e;
+    background-color: rgb(207, 152, 163);
 }
 .comment{
     width: 90%;
@@ -565,13 +569,14 @@ a{
 }
 .comment_input{
     background-color: rgb(163, 59, 59);
-    padding: 7px;
+    padding: 8px;
     margin-top: 15px;
-    background-color: #edf9f9;
-    font-size: 18px;
-    border-radius: 5px;
-    box-shadow: 10px 20px 20px #3e5858;
-    margin-left: 33%;
+    background-color: rgb(237, 187, 197);
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 7px;
+    box-shadow: 10px 10px 20px rgb(172, 121, 131);
+    margin-left: 47%;
 }
 .delete{
     text-align: right;
@@ -641,7 +646,7 @@ a{
     background-color: rgb(239, 205, 210);
 }
 .g-4{
-    background-color: rgb(239, 205, 210);
+    background-color: #efcdd2;
     border-radius: 0;
     border-left: 2px solid white;
     align-items: baseline;
@@ -690,7 +695,7 @@ a{
     font-family: 'Oswald', sans-serif;
 }
 .profile-update{
-    background-color: rgb(229, 152, 168);
+    background-color: #e598a8;
 }
 .but-2{
     display: flex;
@@ -708,7 +713,7 @@ a{
     color: #4374a9;
 }
 .diary_form{
-    background-color: rgb(229, 152, 168);
+    background-color: #e598a8;
     margin: 20px auto;
     width: 40%;
     padding: 20px;
@@ -761,13 +766,13 @@ a{
     background-color: #ffffff;
 }
 .diary{
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     width: 70%;
     margin: 50px auto;
     padding: 20px;
 }
 .diary_list{
-    background-color: rgb(229, 152, 168);
+    background-color: #e598a8;
     border-radius: 20px;
     padding: 30px 0 30px 60px;
     box-shadow: 20px 30px 30px rgb(200, 149, 159);
@@ -828,7 +833,7 @@ a{
 }
 .diary_th{
     border-bottom: 1px solid black;
-    background-color: rgb(246, 168, 184);
+    background-color: #f6a8b8;
     height: 40px;
 }
 .diary_td{
@@ -854,4 +859,39 @@ a{
 }
 .diary_line{
     margin-top: 10px;
+}
+.kardio{
+    background-color: white;
+    width: 50%;
+    margin: 50px auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.kardio_block{
+    width: 40%;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid #c0c0c0;
+    margin: 20px;
+    background-color: #c7d6d6e2;
+    box-shadow: 20px 30px 30px #578080af;
+}
+.kardio_block h5{
+    margin: 10px 0 10px 0;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    color: #494949;
+}
+.kardio_image{
+    width: 110%;
+    height: 90%;
+}
+.kardio-description{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: 300;
 }

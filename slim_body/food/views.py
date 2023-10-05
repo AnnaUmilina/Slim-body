@@ -3,7 +3,6 @@ from .models import Articles, Diets, Recipies
 from .forms import ArticlesForm, ReviewForm, ReviewFormRecipe, RecipiesForm
 from .utils import search_articles, search_recipes, paginate_articles, paginate_recipies
 from django.contrib.auth.decorators import login_required
-from django.contrib import messages
 
 
 def index(request):
@@ -14,7 +13,6 @@ def index(request):
         'search_query': search_query,
         'custom_range': custom_range
     }
-    print(art)
     return render(request, 'food/index.html', context)
 
 

@@ -1,9 +1,9 @@
-from django.contrib import admin
+
 from django.urls import path
-from .views import *
+from . import views
 
 
 urlpatterns = [
-    path('training/', Training.as_view(), name='training'),
-    path('type-of-training/<str:pk>/', TypeOfTraining.as_view(), name='type-of-training'),
+    path('training/', views.training, name='training'),
+    path('type-of-training/<str:pk>/', views.type_of_training, name='type-of-training'),
 ]

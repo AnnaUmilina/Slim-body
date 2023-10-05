@@ -1,29 +1,22 @@
-from django.views.generic import ListView, DetailView
+from django.core.exceptions import ObjectDoesNotExist
 from .models import Fitness, Training
-from django.urls import reverse
+from django.shortcuts import render
 
 
-class Training(ListView):
-    model = Fitness
-    template_name = 'fitness/training.html'
-    context_object_name = 'fitness'
+def training(request):
+    fitness = Fitness.objects.all()
 
-    def get_context_data(self, *, object_list=None, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['title'] = 'Фитнес'
-
-        return context
+    context = {
+        'fitness': fitness,
+    }
+    return render(request, 'fitness/training.html', context)
 
 
-class TypeOfTraining(DetailView):
-    model = Training
-    template_name = 'fitness/type_of_training'
-    context_object_name = 'fitness'
-
-    def get_context_data(self, *, object_list=None, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['title'] = context['fitness']
-        return context
-
-    def get_absolut_url(self):
-        return reverse('fitness', kwargs={'fitness_slug': self.slug})
+def type_of_training(request,pk):
+    fitness = Fitness.objects.get(id=pk)
+    type = fitness.training_set.all()
+    context = {
+        'type': type,
+        'fitness':fitness
+    }
+    return render(request, 'fitness/type_of_training.html', context)
