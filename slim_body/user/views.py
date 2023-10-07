@@ -8,7 +8,6 @@ from .forms import RegisterCreationForm, ProfileForm, BodyForm
 from food.models import Articles
 
 
-
 def login_user(request):
     if request.user.is_authenticated:
         return redirect('account')
@@ -43,8 +42,6 @@ def registration(request):
             user.save()
             login(request, user)
             return redirect('account')
-        else:
-            print('Error')
     context = {
         'form': form
     }
@@ -56,7 +53,7 @@ def account(request):
     profile = request.user.profile
     articles = Articles.objects.filter(owner=request.user.id)
     if articles.exists():
-        return render(request, 'user/account.html', {'articles': articles, 'profile':profile})
+        return render(request, 'user/account.html', {'articles': articles, 'profile': profile})
     else:
         articles = None
         return render(request, 'user/account.html', {'articles': articles, 'profile': profile})

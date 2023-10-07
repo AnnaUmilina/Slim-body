@@ -12,8 +12,8 @@
         <div class="article_title"><a href="{% url 'detail' article.id %}" target="_blank">
             <div class="pink">{{ article.title }}</div>
             <div class="but-2">
-            <div class="up but_up"><a href="{% url 'update-article' article.id %}">Редактировать</a></div>
-            <div class="but_up"><a href="{% url 'delete-article' article.id %}">Удалить</a></div>
+            <div class="up but_up pink-second"><a href="{% url 'update-article' article.id %}">Редактировать</a></div>
+            <div class="but_up pink-second"><a href="{% url 'delete-article' article.id %}">Удалить</a></div>
             </div>
         </div>
         {% endfor %}{% endif %}

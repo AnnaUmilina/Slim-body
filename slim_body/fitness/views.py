@@ -17,6 +17,6 @@ def type_of_training(request,pk):
     type = fitness.training_set.all()
     context = {
         'type': type,
-        'fitness':fitness
+        'fitness':fitness,
     }
     return render(request, 'fitness/type_of_training.html', context)

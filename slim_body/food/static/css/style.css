@@ -145,21 +145,23 @@ a{
 .inp{
     width: 200px;
     height: 50px;
-    font-weight: 400;
-    font-size: 16px;
-    border: 2px solid #000000a8;
+    border: 1px solid #000000a8;
     box-shadow: 10px 10px 15px rgb(173, 93, 109);
-    border-radius: 7px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.847);
     margin: 20px 0 0 7%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    align-items: center;
+    border-radius: 20px;
     
 }
 .avtoris{
     width: 30%;
     height: 20%;
-    padding: 10px;
     position: absolute;
     right: 20%;
+    
 }
 .inp_registr{
     width: 40%;
@@ -186,6 +188,7 @@ a{
 }
 .field{
     background-color:#ffffff;
+    box-shadow: 10px 20px 10px#6d6d6da7;
     padding: 10px 0 10px 20px;
     border-radius: 20px;
 }
@@ -358,9 +361,13 @@ a{
 .register{
     width: 50%;
     height: 10%;
-    background-color: #ffffff;
+    background-color: #ffffffbf;
     position: absolute;
     right: 0;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px rgb(172, 135, 143);
+    border-radius: 20px;
+    padding-left: 20px;
 }
 .authoris_inp{
     width: 55%;
@@ -396,7 +403,9 @@ a{
     border: none;
     padding: 7px 0 7px 20px;
     background-color: rgb(255, 255, 255);
+    box-shadow: 10px 20px 10px#6d6d6da7;
 }
+
 .profile_photo{
     background-color: none;
 }
@@ -526,7 +535,7 @@ a{
     color: #3e5858;
     background-color: #ffffff;
     box-shadow: 10px 20px 20px #3e5858;
-    background-color: rgb(207, 152, 163);
+    background-color: rgb(239, 209, 215);
 }
 .comment{
     width: 90%;
@@ -703,6 +712,8 @@ a{
 }
 .edit-profile{
     margin-top: 10px;
+    font-weight: 300;
+    font-size: 18px;
 }
 .strelka{
     width: 4%;
